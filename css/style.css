@@ -110,6 +110,26 @@ body {
   position: relative;
   max-width: 400px;
 }
+
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.slider-button {
+  cursor: pointer;
+}
+
+.swiper {
+  position: relative;
+}
+
 .slide-title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -150,6 +170,20 @@ body {
 .slide-summer {
   border-radius: 20px;
   background-image: url("../img/summer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-vitamin {
+  border-radius: 20px;
+  background-image: url("../img/vitamin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-autumn {
+  border-radius: 20px;
+  background-image: url("../img/autumn.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -478,6 +512,7 @@ section-title {
 }
 
 .better-card-content {
+  align-items: center;
   flex: none;
   margin: 0px 37px 0 0;
 }
@@ -529,3 +564,58 @@ section-title {
   margin-left: 20px;
   text-decoration: none;
 }
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {
+    width: calc(50% - 30px);
+  }
+  .tabs-card {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  container {
+    max-width: 90%;
+  }
